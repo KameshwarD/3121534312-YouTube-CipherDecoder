@@ -36,4 +36,4 @@ A Python-based decoder for a custom alphanumeric cipher using **digit-to-letter 
 
 ### 1. Run the script directly
 ```bash
-3121534312TEST.py
+Decoder.py
