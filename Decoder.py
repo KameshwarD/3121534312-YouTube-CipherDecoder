@@ -26,20 +26,11 @@ def _expansions(ch: str):
 
 @lru_cache(None)
 def _decode_segment(seg: str):
-    """
-    Best-effort decode of a segment with no zeros by expanding each observed digit and
-    incrementally forming letter codes. Emits '?' only at positions that can't be resolved,
-    instead of failing the whole word.
-    """
     n = len(seg)
 
     @lru_cache(None)
     def dfs(i: int, buf: str) -> str:
-        """
-        i  : index in observed seg
-        buf: current partial digit-buffer (0..2 digits) toward the next code
-        returns: decoded suffix from i with current buf (best-effort, never None)
-        """
+        
         # End of observed digits
         if i == n:
             if buf in CODES:
@@ -60,10 +51,7 @@ def _decode_segment(seg: str):
 
     @lru_cache(None)
     def _consume_expansion(i: int, k: int, ex: str, buf: str):
-        """
-        Consume the k-th digit of expansion 'ex' at observed index i, updating buf.
-        Emit letters as soon as buf equals a valid code. Returns decoded suffix or None.
-        """
+        
         # Finished applying this expansion: move to next observed char
         if k == len(ex):
             return dfs(i + 1, buf)
@@ -107,9 +95,5 @@ def numbers_to_letters(s: str) -> str:
 
 # ---------- Quick checks ----------
 if __name__ == "__main__":
-    print(numbers_to_letters("234526123154612"))
-    print(numbers_to_letters("12126163245"))
-    print(numbers_to_letters("34442315"))
-    print(numbers_to_letters("34351651"))
     print(numbers_to_letters("2656161216521504321315412641524315012443124104412345326231312165352"))
     print(numbers_to_letters("16555152604353261505441652312155241524315"))

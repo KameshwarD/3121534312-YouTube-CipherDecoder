@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cipher Decoder "3121534312"</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>"3121534312" Cipher Decoder</h1>
+      <p>Coming from the 3121534312 YouTube channel? You're in the right place! </p>
+      <p>Together, we've reached 70% decoding accuracy, and we're working to crack the rest of the puzzle.</p>
+    </header>
+
+    <main>
+      <textarea id="input" placeholder="Enter numbers (e.g., 2656161216521504321315412641524315012443124104412345326231312165352)" rows="4"></textarea>
+      
+      <button id="decodeBtn">Decode</button>
+      
+      <div id="output" class="output"></div>
+
+      <div class="examples">
+        <h3>Try these examples:</h3>
+        <button class="example-btn" data-input="2656161216521504321315412641524315012443124104412345326231312165352">Example 1</button>
+        <button class="example-btn" data-input="16555152604353261505441652312155241524315">Example 2</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Stay Hungry, Stay Foolish  --Steve Jobs </p>
+    </footer>
+  </div>
+
+  <!-- 1. Mapping (inline – no extra HTTP request) -->
+  <script id="mapping-data" type="application/json">
+  {
+    "letter_to_number": {
+      "A": 41,  "B": 42,  "C": 43,  "D": 121, "E": 15,  "F": 123,
+      "G": 131, "H": 132, "I": 16,  "J": 24,  "K": 212, "L": 213,
+      "M": 51,  "N": 52,  "O": 53,  "P": 231, "Q": 232, "R": 26,
+      "S": 34,  "T": 312, "U": 313, "V": 321, "W": 35,  "X": 323,
+      "Y": 61,  "Z": 62,  " ": 0
+    }
+  }
+  </script>
+
+  <!-- 2. Decoder class -->
+  <script src="decoder.js"></script>
+
+  <!-- 3. UI glue -->
+  <script src="app.js"></script>
+</body>
+</html>
