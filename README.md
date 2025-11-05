@@ -1,6 +1,7 @@
 # 🔐 Cipher Decoder for "3121534312" YouTube Channel
 
-It is the answer to many videos on the YouTube Channel https://www.youtube.com/@3121534312/videos
+It is the answer to many videos on the YouTube Channel https://www.youtube.com/@3121534312/videos.
+
 A Python-based decoder for a custom alphanumeric cipher using **digit-to-letter mapping** and **lossy compression rules**. Designed to handle unclear or compressed inputs while still revealing as many decoding clues as possible by intelligently inserting `?` in place of unresolved characters.
 
 **Decode secret number codes into readable text — in Python & Web!**
