@@ -13,7 +13,7 @@ A Python-based decoder for a custom alphanumeric cipher using **digit-to-letter 
 
 ## Live Demo
 
-**Try it now**: [https://github.com/KameshwarD.github.io/TESTYouTubeChannel/](https://your-username.github.io/TESTYouTubeChannel/)
+**Try it now**: [https://KameshwarD.github.io/TESTYouTubeChannel/](https://your-username.github.io/TESTYouTubeChannel/)
 
 > **Replace `your-username` with your actual GitHub username**
 
