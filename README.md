@@ -2,6 +2,43 @@
 
 A Python-based decoder for a custom alphanumeric cipher using **digit-to-letter mapping** and **lossy compression rules**. Designed to handle unclear or compressed inputs while still revealing as many decoding clues as possible by intelligently inserting `?` in place of unresolved characters.
 
+**Decode secret number codes into readable text — in Python & Web!**
+
+[![Live Web Demo](https://img.shields.io/badge/Live-Web_Demo-00d4ff?style=for-the-badge&logo=googlechrome&logoColor=white)](https://your-username.github.io/TESTYouTubeChannel/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](Decoder.py)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](index.html)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+---
+
+## Live Demo
+
+**Try it now**: [https://github.com/KameshwarD.github.io/TESTYouTubeChannel/](https://your-username.github.io/TESTYouTubeChannel/)
+
+> **Replace `your-username` with your actual GitHub username**
+
+---
+
+## Features
+
+| Feature | Description |
+|-------|-----------|
+| **Web App** | Beautiful glass-morphism UI with animated gradient |
+| **Real-time Decoding** | Instant results as you type |
+| **Responsive** | Works on phone, tablet, and desktop |
+| **Python Version** | Original logic in `Decoder.py` |
+| **Zero Dependencies** | Pure HTML/CSS/JS — no build tools |
+| **Ctrl+Enter** | Quick decode shortcut |
+| **Example Buttons** | Test with pre-filled codes |
+
+---
+
+## How It Works
+
+This decoder uses a **custom mapping** where each letter is represented by a unique number:
+
+```json
+"A": 41, "B": 42, "C": 43, ..., " ": 0
 ---
 
 ## 📜 Cipher Rules
